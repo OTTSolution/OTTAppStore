@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\workshop\\Project_Luffa_OTT\\Luffa_AppSource\\OTTAppStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\workshop\\Project_Luffa_OTT\\Luffa_AppSource\\OTTAppStore\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workshop\\Project_Luffa_OTT\\Luffa_AppSource\\AppStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\workshop\\Project_Luffa_OTT\\Luffa_AppSource\\AppStore\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]

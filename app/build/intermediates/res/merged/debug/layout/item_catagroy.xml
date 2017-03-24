@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="@drawable/selector_frame_nobackground">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/w_26"
+        android:paddingTop="@dimen/h_18"
+        android:paddingBottom="@dimen/h_18"
+        android:typeface="monospace"
+        android:text="类别"
+        android:textSize="@dimen/w_37"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical" />
+</FrameLayout>

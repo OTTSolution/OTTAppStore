@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/w_600"
+    android:layout_height="@dimen/h_250"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_20"
+        android:typeface="monospace"
+        android:text="标 题"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/w_37"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_10"
+        android:paddingLeft="@dimen/w_54"
+        android:paddingRight="@dimen/w_54"
+        android:typeface="monospace"
+        android:lines="4"
+        android:text="是否支付1000000000000观看本电影\n是否支付1000000000000观看本电影\n是否支付1000000000000观看本电影\n是否支付1000000000000观看本电影\n是否支付1000000000000观看本电影\n"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/w_24"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/w_124"
+        android:paddingRight="@dimen/w_124"
+        android:paddingTop="@dimen/h_10"
+        android:paddingBottom="@dimen/h_10"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="@dimen/w_105"
+            android:layout_height="@dimen/h_40"
+            android:focusable="true"
+            android:typeface="monospace"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/w_22"
+            android:gravity="center"
+            android:background="@drawable/selector_frame_002850"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/w_105"
+            android:layout_height="@dimen/h_40"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:typeface="monospace"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/w_22"
+            android:gravity="center"
+            android:background="@drawable/selector_frame_3e74ad"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

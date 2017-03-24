@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xugaoxiang.ott.appstore.module.homepage.HomoPageFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/w_192"
+    android:paddingRight="@dimen/w_192"
+    android:paddingTop="@dimen/h_108"
+    android:paddingBottom="@dimen/h_108"
+    android:orientation="horizontal"
+    android:background="@drawable/background_fullscreen">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_category"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4.27"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_app_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/rv_category"
+            android:layout_marginLeft="@dimen/w_20"
+            android:background="@drawable/background_app_category"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12.5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/h_48"
+            android:layout_toRightOf="@id/rv_category"
+            android:layout_below="@id/rv_app_category"
+            android:layout_marginLeft="@dimen/w_20"
+            android:background="@drawable/background_app_list">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/w_115"
+                    android:paddingRight="@dimen/w_115"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_16"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:focusable="false" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_74"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/w_26"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_page"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/h_74"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/w_24"
+                    android:typeface="monospace"
+                    android:text="0/0"
+                    android:textSize="@dimen/w_23"
+                    android:textColor="@android:color/white"
+                    android:gravity="right|center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_up"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_20"
+                        android:src="@drawable/arrow_down"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
